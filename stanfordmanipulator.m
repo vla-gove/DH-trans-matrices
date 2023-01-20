@@ -10,7 +10,6 @@ Z1r=trotz(q1);
 X1r=trotx(alfa1);
 T10=Z1r*X1r;
 
-
 alfa2=sym('pi/2');
 q2=sym('q2');
 d2=sym('d2');
