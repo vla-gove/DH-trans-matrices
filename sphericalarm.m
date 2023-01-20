@@ -1,5 +1,7 @@
 startup_rvc;
+
 %transformation matrix of a spherical arm, a 3DOF RRP robot
+
 alfa1=sym('-pi/2');
 q1=sym('q1');
 Z1r=trotz(q1);
