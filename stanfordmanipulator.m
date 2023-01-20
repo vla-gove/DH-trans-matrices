@@ -1,9 +1,9 @@
 startup_rvc;
 %transformation matrix of stanford manipulator using DH tables
-%stanford manipulator is a 6DOF robot consisting of a spherical wrist
-%attached to a spherical arm
+%stanford manipulator is a 6DOF robot consisting of a spherical wrist attached to a spherical arm
 
 %transformation matrix of a spherical arm is given as T30
+
 alfa1=sym('-pi/2');
 q1=sym('q1');
 Z1r=trotz(q1);
@@ -26,6 +26,7 @@ T30=T10*T21*T32;
 simplify(T30);
 
 %transformation matrix of a spherical wrist is given with T63
+
 alfa4=sym('-pi/2');
 q4=sym('q4');
 Z4r=trotz(q4);
@@ -47,8 +48,8 @@ T65=Z5r*Z6t;
 T63=T43*T54*T65;
 simplify(T63);
 
-%finally the transformation matrix of a stanford manipulator is given as a
-%product of two matrices found above
+%the final transformation matrix of a stanford manipulator is given as a product of two matrices above
+
 T60=T30*T63;
 disp('stanford manipulator transformation matrix is given with:')
 simplify(T60)
