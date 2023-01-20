@@ -1,4 +1,5 @@
 startup_rvc;
+
 %transformation matrix of stanford manipulator using DH tables
 %stanford manipulator is a 6DOF robot consisting of a spherical wrist attached to a spherical arm
 
