@@ -1,7 +1,8 @@
 startup_rvc;
+
 %transformation matrix of antromorphic arm
-%antromorphic arm is a 3DOF robot consisting of 3 revolute joints,
-%resembling a human arm (shoulder, elbow, wrist)
+%antromorphic arm is a 3DOF robot consisting of 3 revolute joints, resembling a human arm (shoulder, elbow, wrist)
+
 alfa1=sym('pi/2');
 q1=sym('q1');
 Z1r=trotz(q1);
